@@ -1,393 +1,397 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>QualityFit — Software de gestión para gimnasios, yoga y boxing</title>
-<link rel="stylesheet" href="styles.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QualityFit — Software para gimnasios, yoga y boxing</title>
+  <meta name="description" content="QualityFit centraliza membresías, check-ins, clases, instructores, facturación y reportes en una sola plataforma para gimnasios, yoga y boxing.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Barlow+Condensed:wght@600;700;800&family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<template id="__bundler_thumbnail" data-bg-color="#000000">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#000000"/>
-    <circle cx="600" cy="320" r="130" fill="none" stroke="#d92b12" stroke-width="14"/>
-    <path d="M600 250a2 2 0 0 0-40 40c0 20-2 50-5 80M640 290c0 48 0 118-20 168M600 205a80 80 0 0 1 80 80v28" fill="none" stroke="#d92b12" stroke-width="14" stroke-linecap="round"/>
-    <text x="600" y="570" font-family="'Barlow Condensed',sans-serif" font-size="90" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">QUALITYFIT</text>
-  </svg>
-</template>
 
-<nav>
-  <div class="wrap">
-    <div class="brand-lockup">
-      <img src="assets/logo.jpg" alt="QualityFit" />
-      <span>QualityFit</span>
-    </div>
-    <div class="nav-links">
-      <a href="#modulos">Módulos</a>
-      <a href="#funcionalidades">Funcionalidades</a>
-      <a href="#plantillas">Plantillas</a>
-      <a href="#pantallas">Pantallas</a>
-      <a href="#beneficios">Beneficios</a>
-    </div>
-    <a href="#cta" class="btn btn-primary" style="padding:10px 20px; font-size:14px;">Solicitar demo</a>
-  </div>
-</nav>
+  <!-- Navegación -->
+  <nav class="nav" aria-label="Principal">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__brand">
+        <img src="src/images/logo.jpg" alt="QualityFit" class="nav__logo" width="120" height="32">
+      </a>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="wrap">
-    <div data-aos="fade-right" data-aos-duration="900">
-      <span class="eyebrow" style="color: var(--red-400);">Software para gimnasios, yoga y boxing</span>
-      <h1 style="margin-top:14px;">Toda tu operación, en un solo panel.</h1>
-      <p class="lede">QualityFit centraliza miembros, membresías, check-ins, clases, instructores, facturación y reportes en una sola plataforma — pensada para recepción rápida y control financiero real.</p>
-      <div class="hero-ctas">
-        <a href="#cta" class="btn btn-primary">Solicitar demo</a>
-        <a href="#modulos" class="btn btn-ghost-light">Ver módulos</a>
+      <div class="nav__links">
+        <a href="#plantillas" class="active">Plantillas</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#pantallas">Pantallas</a>
+        <a href="#beneficios">Beneficios</a>
       </div>
-      <div class="hero-stats">
-        <div><b>11</b><span>Módulos integrados</span></div>
-        <div><b>3</b><span>Métodos de check-in</span></div>
-        <div><b>100%</b><span>Operación centralizada</span></div>
-      </div>
+
+      <a href="#demo" class="btn btn--primary nav__cta">Solicitar demo</a>
     </div>
-    <div class="mock" data-aos="fade-left" data-aos-duration="900">
-      <div class="mock-bar"><i></i><i></i><i></i></div>
-      <div class="mock-body">
-        <div class="mock-grid">
-          <div class="mock-card"><span>Miembros activos</span><b>428</b></div>
-          <div class="mock-card"><span>Check-ins hoy</span><b class="up">96</b></div>
-          <div class="mock-card"><span>Ingresos del mes</span><b>$18.4M</b></div>
-          <div class="mock-card"><span>Membresías por vencer</span><b>12</b></div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="inicio" class="section section--hero">
+    <div class="gradient-section-divider" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <span class="hero__eyebrow">&#x2615; Software para gimnasios, yoga y boxing</span>
+          <h1 class="hero__title">
+            Toda tu operación,<br>
+            <span class="text-gradient">en un solo panel.</span>
+          </h1>
+          <p class="lead lead--on-dark">
+            QualityFit centraliza miembros, membresías, check-ins, clases, instructores, facturación y reportes en una sola plataforma — pensada para recepción rápida y control financiero real.
+          </p>
+          <div class="hero__actions">
+            <a href="#demo" class="btn btn--primary btn--large">Solicitar demo</a>
+            <a href="#funcionalidades" class="btn btn--ghost btn--large">Ver funcionalidades</a>
+          </div>
         </div>
-        <div class="mock-list">
-          <div class="mock-row"><div class="dot"></div><div class="lines"><div class="l1"></div><div class="l2"></div></div><span class="badge">Huella</span></div>
-          <div class="mock-row"><div class="dot" style="background:var(--zinc-700);"></div><div class="lines"><div class="l1"></div><div class="l2"></div></div><span class="badge">Manual</span></div>
-          <div class="mock-row"><div class="dot" style="background:var(--zinc-700);"></div><div class="lines"><div class="l1"></div><div class="l2"></div></div><span class="badge">Invitado</span></div>
+
+        <div class="hero__visual">
+          <div class="hero__image-wrap">
+            <img src="src/images/templates/ZfitnessGymQF1.png" alt="Vista previa del panel de QualityFit" width="820" height="540">
+          </div>
+          <div class="hero__decor hero__decor--2" aria-hidden="true"></div>
         </div>
       </div>
+      <div class="hero__decor hero__decor--1" aria-hidden="true"></div>
     </div>
-  </div>
-  <div style="height:64px;"></div>
-</header>
+  </header>
 
-<!-- AUDIENCE -->
-<section class="audience">
-  <div class="wrap" data-aos="fade-up">
-    <div class="aud-item">
-      <div class="ic">🧘</div>
-      <strong>Estudios de yoga</strong>
-    </div>
-    <div class="aud-item">
-      <div class="ic">🥊</div>
-      <strong>Centros de boxing</strong>
-    </div>
-    <div class="aud-item">
-      <div class="ic">🏋️</div>
-      <strong>Gimnasios</strong>
-    </div>
-    <div class="aud-item">
-      <div class="ic">🤸</div>
-      <strong>Estudios de clases grupales</strong>
-    </div>
-  </div>
-</section>
+  <!-- Plantillas -->
+  <section id="plantillas" class="section section--elevated">
+    <div class="container">
+      <h2 class="h-section">Plantillas listas para tu negocio</h2>
+      <p class="lead mb-8">Elige la plantilla ideal y ve tu negocio en acción. Cada plantilla ya está lista para mostrar tu marca y ofrecer una experiencia profesional.</p>
 
-<!-- TEMPLATES -->
-<section id="plantillas">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Plantillas listas para tu negocio</span>
-      <h2>Elige la plantilla ideal y ve tu negocio en acción</h2>
-      <p>Cada plantilla ya está lista para mostrar tu marca y ofrecer una experiencia profesional para clientes de gimnasios, yoga, boxing y fitness.</p>
-    </div>
-    <div class="template-grid" data-aos="fade-up">
-      <article class="template-card">
-        <h3>ZfitnessGymQF1</h3>
-        <img src="assets/zfitnessgymqf1.png" alt="ZfitnessGymQF1" style="width:100%; border-radius:var(--radius-md); margin-bottom:12px;" />
-        <a href="https://qualitytechp.github.io/ZfitnessGymQF1/" class="btn btn-primary" target="_blank" rel="noopener">Ir a la plantilla</a>
-      </article>
-      <article class="template-card">
-        <h3>fitnessPointQF1</h3>
-        <img src="assets/fitnesspointqf1.png" alt="fitnessPointQF1" style="width:100%; border-radius:var(--radius-md); margin-bottom:12px;" />
-        <a href="https://qualitytechp.github.io/fitnessPointQF1/" class="btn btn-primary" target="_blank" rel="noopener">Ir a la plantilla</a>
-      </article>
-      <article class="template-card">
-        <h3>FitClubQF1</h3>
-        <img src="assets/fitclubqf1.png" alt="FitClubQF1" style="width:100%; border-radius:var(--radius-md); margin-bottom:12px;" />
-        <a href="https://qualitytechp.github.io/FitClubQF1/" class="btn btn-primary" target="_blank" rel="noopener">Ir a la plantilla</a>
-      </article>
-      <article class="template-card">
-        <h3>ArtStudioQF1</h3>
-        <img src="assets/artstudioqf1.png" alt="ArtStudioQF1" style="width:100%; border-radius:var(--radius-md); margin-bottom:12px;" />
-        <a href="https://qualitytechp.github.io/ArtStudioQF1/" class="btn btn-primary" target="_blank" rel="noopener">Ir a la plantilla</a>
-      </article>
-      <article class="template-card">
-        <h3>FitclubBQF1</h3>
-        <img src="assets/fitclubbqf1.png" alt="FitclubBQF1" style="width:100%; border-radius:var(--radius-md); margin-bottom:12px;" />
-        <a href="https://qualitytechp.github.io/FitclubBQF1/" class="btn btn-primary" target="_blank" rel="noopener">Ir a la plantilla</a>
-      </article>
-    </div>
-  </div>
-</section>
+      <div class="templates-grid">
+        <article class="template-card">
+          <div class="template-card__media">
+            <img src="src/images/templates/fitnessPointQF1.png" alt="Plantilla Fitness Point" width="640" height="480" loading="lazy">
+          </div>
+          <div class="template-card__body">
+            <span class="template-card__tag">Gimnasio</span>
+            <h3 class="template-card__title">Fitness Point</h3>
+            <p class="template-card__desc">Diseño audaz y energético para centros de entrenamiento moderno y cross training.</p>
+          </div>
+        </article>
 
-<!-- PROBLEMS -->
-<section id="problemas">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">El problema</span>
-      <h2>La operación diaria no debería ser un caos de hojas de cálculo</h2>
-      <p>Recepción, cobros y clases se manejan hoy en cuadernos, Excel y grupos de chat — QualityFit los reemplaza por un solo sistema.</p>
-    </div>
-    <div class="problems-grid">
-      <div class="problem">
-        <div class="num">01</div>
-        <h3>Recepción lenta</h3>
-        <p>Verificar membresías y reservas a mano retrasa el ingreso y genera filas en la entrada.</p>
-      </div>
-      <div class="problem">
-        <div class="num">02</div>
-        <h3>Cobros dispersos</h3>
-        <p>Pagos, tiqueteras y clases sueltas sin un registro único dificultan saber qué está pendiente.</p>
-      </div>
-      <div class="problem">
-        <div class="num">03</div>
-        <h3>Cero visibilidad</h3>
-        <p>Sin reportes centralizados es difícil saber cuánto entra, cuánto sale y qué clases funcionan.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <article class="template-card">
+          <div class="template-card__media">
+            <img src="src/images/templates/FitClubQF1.png" alt="Plantilla Fit Club" width="640" height="480" loading="lazy">
+          </div>
+          <div class="template-card__body">
+            <span class="template-card__tag">Club</span>
+            <h3 class="template-card__title">Fit Club</h3>
+            <p class="template-card__desc">Diseño limpio y comunitario, perfecto para boutiques y clubes deportivos.</p>
+          </div>
+        </article>
 
-<!-- FEATURES -->
-<section id="funcionalidades" class="features-bg">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Funcionalidades principales</span>
-      <h2>Todo lo que necesita tu recepción y tu administración</h2>
-      <p>Una sola plataforma para el día a día operativo y para las decisiones financieras del negocio.</p>
-    </div>
-    <div class="feat-grid" data-aos="fade-up">
-      <div class="feat"><div class="ic">🔐</div><h3>Autenticación por roles</h3><p>Acceso controlado para administradores y recepcionistas.</p></div>
-      <div class="feat"><div class="ic">📊</div><h3>Panel en tiempo real</h3><p>Métricas de miembros, check-ins e ingresos siempre actualizadas.</p></div>
-      <div class="feat"><div class="ic">👥</div><h3>Gestión de miembros</h3><p>Fichas completas con datos personales, contacto y documentación.</p></div>
-      <div class="feat"><div class="ic">🎟️</div><h3>Membresías flexibles</h3><p>Planes de mensualidad y tiquetera con vigencia y días restantes.</p></div>
-      <div class="feat"><div class="ic">🖐️</div><h3>Check-in multicanal</h3><p>Ingreso por huella, carnet o búsqueda manual, con selección de clase.</p></div>
-      <div class="feat"><div class="ic">💳</div><h3>Facturación y pagos</h3><p>Seguimiento de cobros, estados y métodos de pago.</p></div>
-      <div class="feat"><div class="ic">📅</div><h3>Clases y reservas</h3><p>Programación de horarios, cupos e instructores asignados.</p></div>
-      <div class="feat"><div class="ic">🧑‍🏫</div><h3>Instructores</h3><p>Asistencia diaria, especialidad y pago por clase.</p></div>
-      <div class="feat"><div class="ic">📈</div><h3>Reportes accionables</h3><p>Gráficas de ingresos, asistencias y distribución de membresías.</p></div>
-    </div>
-  </div>
-</section>
+        <article class="template-card">
+          <div class="template-card__media">
+            <img src="src/images/templates/ArtStudioQF1.png" alt="Plantilla Art Studio" width="640" height="480" loading="lazy">
+          </div>
+          <div class="template-card__body">
+            <span class="template-card__tag">Creativo</span>
+            <h3 class="template-card__title">Art Studio</h3>
+            <p class="template-card__desc">Diseño expresivo para estudios de danza, artes marciales y bienestar.</p>
+          </div>
+        </article>
 
-<!-- MODULES -->
-<section id="modulos">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Módulos del sistema</span>
-      <h2>Una ventana para cada parte del negocio</h2>
-      <p>Once módulos conectados entre sí — lo que pasa en recepción se refleja al instante en reportes y facturación.</p>
-    </div>
-    <div class="mod-grid">
-      <div class="mod-card" data-aos="fade-up">
-        <span class="tag">Recepción</span>
-        <h3>Check-in</h3>
-        <ul>
-          <li>Huella, carnet o búsqueda manual</li>
-          <li>Selección de clase al llegar</li>
-          <li>Check-in de invitados con cobro</li>
-          <li>Aforo y últimos ingresos en vivo</li>
-        </ul>
-      </div>
-      <div class="mod-card">
-        <span class="tag">Clientes</span>
-        <h3>Miembros</h3>
-        <ul>
-          <li>Búsqueda por nombre o documento</li>
-          <li>Ficha con contacto de emergencia</li>
-          <li>Historial de membresías y facturas</li>
-          <li>Activación / desactivación</li>
-        </ul>
-      </div>
-      <div class="mod-card">
-        <span class="tag">Planes</span>
-        <h3>Membresías</h3>
-        <ul>
-          <li>Mensualidad y tiquetera</li>
-          <li>Vigencia y días restantes</li>
-          <li>Filtros por estado y tipo</li>
-          <li>Cancelación de planes activos</li>
-        </ul>
-      </div>
-      <div class="mod-card">
-        <span class="tag">Finanzas</span>
-        <h3>Facturación</h3>
-        <ul>
-          <li>Facturas para miembros o invitados</li>
-          <li>Métodos y estados de pago</li>
-          <li>Resumen de cobrado y pendiente</li>
-          <li>Asociación a membresía</li>
-        </ul>
-      </div>
-      <div class="mod-card">
-        <span class="tag">Agenda</span>
-        <h3>Clases y horarios</h3>
-        <ul>
-          <li>Creación y edición de clases</li>
-          <li>Instructor, cupo y tipo de clase</li>
-          <li>Reservas asociadas por horario</li>
-          <li>Cancelación desde administración</li>
-        </ul>
-      </div>
-      <div class="mod-card">
-        <span class="tag">Portal cliente</span>
-        <h3>Reservas públicas</h3>
-        <ul>
-          <li>Consulta por número de cédula</li>
-          <li>Clases agrupadas por fecha</li>
-          <li>Reserva de clases y eventos</li>
-          <li>Cancelación desde el portal</li>
-        </ul>
-      </div>
-      <div class="mod-card">
-        <span class="tag">Staff</span>
-        <h3>Instructores</h3>
-        <ul>
-          <li>Especialidad y salario por clase</li>
-          <li>Asistencia diaria del instructor</li>
-          <li>Búsqueda e historial</li>
-          <li>Activos e inactivos</li>
-        </ul>
-      </div>
-      <div class="mod-card">
-        <span class="tag">Analítica</span>
-        <h3>Reportes</h3>
-        <ul>
-          <li>Ingresos por mes con rango</li>
-          <li>Asistencias de los últimos 30 días</li>
-          <li>Distribución de membresías</li>
-          <li>Resumen operativo de vencimientos</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+        <article class="template-card">
+          <div class="template-card__media">
+            <img src="src/images/templates/FitclubBQF1.png" alt="Plantilla Fit Club B" width="640" height="480" loading="lazy">
+          </div>
+          <div class="template-card__body">
+            <span class="template-card__tag">Club</span>
+            <h3 class="template-card__title">Fit Club B</h3>
+            <p class="template-card__desc">Layout alternativo optimizado para horarios, clases y reservas en línea.</p>
+          </div>
+        </article>
 
-<!-- SCREENS -->
-<section id="pantallas" class="screens">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Pantallas del producto</span>
-      <h2>Diseñado para recepción y para administración</h2>
-      <p>Interfaces claras, rápidas de operar y con la información justa para decidir.</p>
+        <article class="template-card">
+          <div class="template-card__media">
+            <img src="src/images/templates/ZfitnessGymQF1.png" alt="Plantilla ZFitness" width="640" height="480" loading="lazy">
+          </div>
+          <div class="template-card__body">
+            <span class="template-card__tag">Gimnasio</span>
+            <h3 class="template-card__title">ZFitness</h3>
+            <p class="template-card__desc">Estilo de alto impacto con visuales fuertes para gimnasios de rendimiento.</p>
+          </div>
+        </article>
+
+        <article class="template-card">
+          <div class="template-card__media">
+            <img src="src/images/templates/fitnessPointQF1.png" alt="Vista previa" width="640" height="480" loading="lazy">
+          </div>
+          <div class="template-card__body">
+            <span class="template-card__tag">Próximamente</span>
+            <h3 class="template-card__title">Más plantillas</h3>
+            <p class="template-card__desc">Vienen más diseños pensados para cada tipo de negocio fitness.</p>
+          </div>
+        </article>
+      </div>
     </div>
-    <input type="radio" name="screen-tab" id="tab-dashboard" class="screen-radio" checked />
-    <input type="radio" name="screen-tab" id="tab-checkin" class="screen-radio" />
-    <input type="radio" name="screen-tab" id="tab-membresias" class="screen-radio" />
-    <input type="radio" name="screen-tab" id="tab-reportes" class="screen-radio" />
-    <div class="screen-tabs">
-      <label class="screen-tab" for="tab-dashboard">Dashboard</label>
-      <label class="screen-tab" for="tab-checkin">Check-in</label>
-      <label class="screen-tab" for="tab-membresias">Membresías</label>
-      <label class="screen-tab" for="tab-reportes">Reportes</label>
-    </div>
-    <div class="screen-panels">
-      <div class="screen-panel" id="panel-dashboard">
-        <div class="sp-head"><h3>Dashboard</h3><p>Resumen general del negocio en tiempo real</p></div>
-        <div class="sp-cards">
-          <div class="sp-stat"><span>Miembros</span><b>428</b></div>
-          <div class="sp-stat"><span>Membresías activas</span><b>361</b></div>
-          <div class="sp-stat"><span>Check-ins hoy</span><b>96</b></div>
-          <div class="sp-stat"><span>Ingresos del mes</span><b>$18.4M</b></div>
+  </section>
+
+  <!-- Funcionalidades -->
+  <section id="funcionalidades" class="section section--dark">
+    <div class="container">
+      <h2 class="h-section text-center">Pensado para el rendimiento</h2>
+      <p class="lead lead--on-dark mb-8 text-center mx-auto">Todo lo que necesitas para manejar un negocio fitness premium, sin complejidades.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F3C6;</div>
+          <h3 class="feature-card__title">Miembros</h3>
+          <p class="feature-card__desc">Gestión inteligente de miembros con check-ins, planes, renovaciones y herramientas de engagement automatizadas.</p>
         </div>
-        <div class="sp-bars">
-          <i style="height:40%;"></i><i style="height:55%;"></i><i style="height:35%;"></i><i style="height:70%;"></i><i style="height:50%;"></i><i style="height:80%;"></i><i style="height:60%;"></i><i style="height:90%;"></i><i style="height:65%;"></i><i style="height:45%;"></i><i style="height:75%;"></i><i style="height:58%;"></i>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F4C5;</div>
+          <h3 class="feature-card__title">Clases</h3>
+          <p class="feature-card__desc">Programa clases, controla el aforo y permite reservas en línea en tiempo real.</p>
         </div>
-      </div>
-      <div class="screen-panel" id="panel-checkin">
-        <div class="sp-head"><h3>Check-in</h3><p>Ingresos de hoy en recepción</p></div>
-        <div class="sp-rows">
-          <div class="sp-row"><div class="av">MG</div><span class="name">María Gómez</span><span class="meta">08:12</span><span class="badge-ok">Huella</span></div>
-          <div class="sp-row"><div class="av">JR</div><span class="name">Julián Rey</span><span class="meta">08:15</span><span class="badge-ok">Manual</span></div>
-          <div class="sp-row"><div class="av">?</div><span class="name">Invitado — Laura P.</span><span class="meta">08:20</span><span class="badge-warn">Clase única</span></div>
-          <div class="sp-row"><div class="av">SC</div><span class="name">Sandra Castro</span><span class="meta">08:26</span><span class="badge-ok">Carnet</span></div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F4CA;</div>
+          <h3 class="feature-card__title">Reportes</h3>
+          <p class="feature-card__desc">Ingresos, asistencia, retención y crecimiento en un solo panel poderoso.</p>
         </div>
-      </div>
-      <div class="screen-panel" id="panel-membresias">
-        <div class="sp-head"><h3>Membresías</h3><p>Planes activos, vencidos y por renovar</p></div>
-        <div class="sp-rows">
-          <div class="sp-row"><div class="av">MG</div><span class="name">Mensualidad — María Gómez</span><span class="meta">Vence 30 días</span><span class="badge-ok">Activa</span></div>
-          <div class="sp-row"><div class="av">JR</div><span class="name">Tiquetera — Julián Rey</span><span class="meta">4 clases restantes</span><span class="badge-warn">Por vencer</span></div>
-          <div class="sp-row"><div class="av">SC</div><span class="name">Mensualidad — Sandra Castro</span><span class="meta">Venció hace 3 días</span><span class="badge-due">Vencida</span></div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F4E7;</div>
+          <h3 class="feature-card__title">Automatización</h3>
+          <p class="feature-card__desc">Notificaciones, recordatorios y seguimientos por correo, SMS o WhatsApp.</p>
         </div>
-      </div>
-      <div class="screen-panel" id="panel-reportes">
-        <div class="sp-head"><h3>Reportes</h3><p>Distribución de membresías por estado</p></div>
-        <div class="sp-cards">
-          <div class="sp-stat"><span>Activas</span><b>361</b></div>
-          <div class="sp-stat"><span>Por vencer</span><b>28</b></div>
-          <div class="sp-stat"><span>Vencidas</span><b>39</b></div>
-          <div class="sp-stat"><span>Canceladas</span><b>12</b></div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F6E1;&#xFE0F;</div>
+          <h3 class="feature-card__title">Seguridad</h3>
+          <p class="feature-card__desc">Protección de nivel empresarial para datos de miembros, pagos y operaciones.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">&#x1F30D;</div>
+          <h3 class="feature-card__title">Multisede</h3>
+          <p class="feature-card__desc">Administra todas tus sedes, franquicias o estudios aliados desde un solo sistema.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- BENEFITS -->
-<section id="beneficios">
-  <div class="wrap">
-    <div class="benefit-list">
-      <span class="eyebrow">Beneficios para tu negocio</span>
-      <h2 style="font-size: var(--text-4xl); margin-top:6px; margin-bottom: 8px;">Menos errores, más control</h2>
-      <div class="benefit-item">
-        <div class="ic">⚡</div>
-        <div><h3>Recepción más rápida</h3><p>Check-in por huella o carnet en segundos, sin filas ni verificación manual.</p></div>
-      </div>
-      <div class="benefit-item">
-        <div class="ic">💰</div>
-        <div><h3>Control financiero real</h3><p>Facturación, pagos y gastos centralizados para saber exactamente qué entra y qué sale.</p></div>
-      </div>
-      <div class="benefit-item">
-        <div class="ic">🗓️</div>
-        <div><h3>Clases sin sobrecupo</h3><p>Reservas públicas e internas conectadas al mismo cupo, sin duplicar registros.</p></div>
-      </div>
-      <div class="benefit-item">
-        <div class="ic">📉</div>
-        <div><h3>Decisiones con datos</h3><p>Reportes de ingresos, asistencia y membresías para ajustar la operación a tiempo.</p></div>
-      </div>
-    </div>
-    <div class="benefit-panel">
-      <span class="quote-mark">“</span>
-      <p class="quote">Todo lo que pasa en recepción — quién llegó, quién pagó, quién reservó — queda en un solo lugar, al instante.</p>
-      <div class="who"><b>Operación centralizada</b>Recepción, administración y reportes sobre la misma base de datos.</div>
-    </div>
-  </div>
-</section>
+  <!-- Pantallas -->
+  <section id="pantallas" class="section">
+    <div class="container">
+      <h2 class="h-section text-center">Mira cómo funciona</h2>
+      <p class="lead mb-8 text-center mx-auto">Una plataforma hecha para la forma en que los equipos fitness trabajan hoy.</p>
 
-<!-- FINAL CTA -->
-<section class="cta-final" id="cta">
-  <div class="wrap">
-    <h2>Lleva el control de tu centro a otro nivel</h2>
-    <p>Agenda una demo y descubre cómo QualityFit organiza la recepción, las membresías y las finanzas de tu gimnasio, box o estudio de yoga.</p>
-    <div class="hero-ctas">
-      <a href="#" class="btn btn-dark">Solicitar demo</a>
-      <a href="#" class="btn btn-ghost-light">Hablar con ventas</a>
-    </div>
-  </div>
-</section>
+      <div class="tabs">
+        <input type="radio" name="tab" id="tab-ui" class="tabs__input" checked>
+        <input type="radio" name="tab" id="tab-reports" class="tabs__input">
+        <input type="radio" name="tab" id="tab-admin" class="tabs__input">
 
-<footer>
-  <div class="wrap">
-    <div class="brand-lockup">
-      <img src="assets/logo.jpg" alt="QualityFit" />
-      <span>QualityFit</span>
+        <div class="tabs__nav">
+          <label for="tab-ui" class="tabs__label">Interfaz</label>
+          <label for="tab-reports" class="tabs__label">Reportes</label>
+          <label for="tab-admin" class="tabs__label">Administración</label>
+        </div>
+
+        <div class="tabs__panels">
+          <div class="tabs__panel panel-ui">
+            <div class="screen-showcase">
+              <div class="screen-showcase__header">
+                <span class="screen-showcase__dot screen-showcase__dot--red" aria-hidden="true"></span>
+                <span class="screen-showcase__dot screen-showcase__dot--yellow" aria-hidden="true"></span>
+                <span class="screen-showcase__dot screen-showcase__dot--green" aria-hidden="true"></span>
+              </div>
+              <div class="screen-showcase__body">
+                <img src="src/images/interfaz.png" alt="Vista de interfaz" class="screen-showcase__img" width="1200" height="720" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__panel panel-reports">
+            <div class="screen-showcase">
+              <div class="screen-showcase__header">
+                <span class="screen-showcase__dot screen-showcase__dot--red" aria-hidden="true"></span>
+                <span class="screen-showcase__dot screen-showcase__dot--yellow" aria-hidden="true"></span>
+                <span class="screen-showcase__dot screen-showcase__dot--green" aria-hidden="true"></span>
+              </div>
+              <div class="screen-showcase__body">
+                <img src="src/images/reportes.png" alt="Vista de reportes" class="screen-showcase__img" width="1200" height="720" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__panel panel-admin">
+            <div class="screen-showcase">
+              <div class="screen-showcase__header">
+                <span class="screen-showcase__dot screen-showcase__dot--red" aria-hidden="true"></span>
+                <span class="screen-showcase__dot screen-showcase__dot--yellow" aria-hidden="true"></span>
+                <span class="screen-showcase__dot screen-showcase__dot--green" aria-hidden="true"></span>
+              </div>
+              <div class="screen-showcase__body">
+                <img src="src/images/administracion.png" alt="Vista de administración" class="screen-showcase__img" width="1200" height="720" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <span>© 2026 QualityFit. Software de gestión para gimnasios y estudios.</span>
-  </div>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="js/app.js"></script>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="beneficios" class="section section--elevated">
+    <div class="container">
+      <div class="benefits-split">
+        <div>
+          <h2 class="h-section">¿Por qué QualityFit?</h2>
+          <p class="lead mb-6">Hecho por gente de gimnasios, para gente de gimnasios: más rápido, más limpio y más intuitivo.</p>
+
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <div class="benefit-item__check">&#x2714;</div>
+              <div>
+                <h3 class="benefit-item__title">Onboarding más rápido</h3>
+                <p class="benefit-item__desc">Los nuevos miembros se crean en minutos, no en horas, con configuración guiada y valores por defecto.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-item__check">&#x2714;</div>
+              <div>
+                <h3 class="benefit-item__title">Menos inasistencias</h3>
+                <p class="benefit-item__desc">Recordatorios automáticos y listas de espera mantienen las clases llenas y las cancelaciones bajas.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-item__check">&#x2714;</div>
+              <div>
+                <h3 class="benefit-item__title">Código moderno</h3>
+                <p class="benefit-item__desc">Arquitectura actual, actualizaciones rápidas y una plataforma pensada para durar.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-item__check">&#x2714;</div>
+              <div>
+                <h3 class="benefit-item__title">Soporte real</h3>
+                <p class="benefit-item__desc">Personas reales que entienden tu negocio, no solo software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-visual">
+          <img src="src/images/templates/ArtStudioQF1.png" alt="Experiencia QualityFit" class="benefits-visual__img" width="800" height="600" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulos -->
+  <section id="modulos" class="section">
+    <div class="container">
+      <h2 class="h-section">Módulos principales</h2>
+      <p class="lead mb-8">Herramientas enfocadas que trabajan juntas, para que no tengas que unir media docena de aplicaciones.</p>
+
+      <div class="flex-col gap-8">
+        <div class="module-card">
+          <div class="module-card__icon">&#x1F4CB;</div>
+          <div class="module-card__body">
+            <h3 class="module-card__title">Check-in y acceso</h3>
+            <p class="module-card__desc">Verificación rápida de miembros por QR, NFC o app móvil para que las filas nunca te detengan.</p>
+          </div>
+        </div>
+
+        <div class="module-card">
+          <div class="module-card__icon">&#x1F4F1;</div>
+          <div class="module-card__body">
+            <h3 class="module-card__title">Mensajes y campañas</h3>
+            <p class="module-card__desc">Campañas dirigidas, recordatorios de clase y flujos de reenganche que se sienten personales.</p>
+          </div>
+        </div>
+
+        <div class="module-card">
+          <div class="module-card__icon">&#x1F4B3;</div>
+          <div class="module-card__body">
+            <h3 class="module-card__title">Facturación y pagos</h3>
+            <p class="module-card__desc">Suscripciones, facturas, reintentos y automatización de cobros diseñada para equipos comerciales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section id="demo" class="cta-section">
+    <div class="container">
+      <h2 class="cta__title">¿Listo para llevar tu gimnasio al siguiente nivel?</h2>
+      <p class="cta__desc">Agenda una demo y descubre cómo QualityFit organiza la recepción, las membresías y las finanzas de tu gimnasio, box o estudio de yoga.</p>
+      <div class="cta__actions">
+        <a href="#" class="btn btn--primary btn--large">Solicitar demo ahora</a>
+        <a href="#" class="btn btn--ghost btn--large">Hablar con ventas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="#inicio" class="footer__brand">
+            <img src="src/images/logo.jpg" alt="QualityFit" class="footer__logo" width="120" height="28">
+          </a>
+          <p class="footer__desc">Software moderno para negocios fitness modernos. Administra miembros, clases y crecimiento, todo en un solo lugar.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Producto</h4>
+          <ul class="footer__links">
+            <li><a href="#plantillas">Plantillas</a></li>
+            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#pantallas">Pantallas</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Empresa</h4>
+          <ul class="footer__links">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Empleos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Soporte</h4>
+          <ul class="footer__links">
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Documentación</a></li>
+            <li><a href="#">Estado</a></li>
+            <li><a href="#">Seguridad</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; QualityFit. Todos los derechos reservados.</span>
+        <span>Hecho para negocios fitness modernos.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/app.js"></script>
 </body>
 </html>

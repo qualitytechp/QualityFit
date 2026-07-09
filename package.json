@@ -2,10 +2,10 @@
   "name": "qualityfit",
   "version": "1.0.0",
   "private": true,
-  "description": "QualityFit landing page with SCSS and scroll animations.",
+  "description": "QualityFit landing page with SCSS tokens and scroll animations.",
   "scripts": {
-    "build:css": "sass styles.scss styles.css --no-source-map",
-    "watch:css": "sass --watch styles.scss:styles.css --no-source-map"
+    "build:css": "sass src/scss/main.scss styles.css --no-source-map",
+    "watch:css": "sass --watch src/scss/main.scss:styles.css --no-source-map"
   },
   "devDependencies": {
     "sass": "^1.80.0"
