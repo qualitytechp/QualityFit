@@ -1,0 +1,30 @@
+/* QualityFit — Spacing & layout tokens
+   4px base grid, matching the Tailwind scale the source app was built on. */
+
+:root {
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* Component paddings seen in the app */
+  --pad-btn-y:   8px;    /* px-4 py-2 */
+  --pad-btn-x:   16px;
+  --pad-input-y: 8px;    /* px-3 py-2 */
+  --pad-input-x: 12px;
+  --pad-card:    24px;   /* p-6 */
+  --pad-card-sm: 16px;   /* p-4 */
+
+  /* Layout */
+  --sidebar-w:   256px;  /* w-64 */
+  --header-h:    64px;
+  --content-max: 1280px;
+}

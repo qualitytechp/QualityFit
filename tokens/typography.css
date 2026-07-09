@@ -1,0 +1,44 @@
+/* QualityFit — Typography tokens */
+
+:root {
+  /* ---- Families ---- */
+  /* UI / body — clean, close to the app's original system feel */
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, -apple-system,
+               'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* Display — condensed athletic face for hero + brand headings */
+  --font-display: 'Barlow Condensed', 'Barlow Semi Condensed', var(--font-sans);
+  /* Numeric / tabular for money + tables */
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* ---- Weights ---- */
+  --fw-regular:  400; /* @kind font */
+  --fw-medium:   500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold:     700; /* @kind font */
+  --fw-black:    800; /* @kind font */
+
+  /* ---- Type scale (UI is compact, matching the source app) ---- */
+  --text-xs:   12px;   /* badges, table meta, helper text */
+  --text-sm:   14px;   /* default UI / body — the app's baseline */
+  --text-base: 16px;
+  --text-lg:   18px;   /* card titles */
+  --text-xl:   20px;   /* page title (mobile) */
+  --text-2xl:  24px;   /* page title (desktop) */
+  --text-3xl:  30px;
+  --text-4xl:  38px;   /* stat figures / display */
+  --text-5xl:  52px;   /* hero display */
+  --text-6xl:  72px;
+
+  /* ---- Line heights ---- */
+  --leading-none:    1;
+  --leading-tight:   1.15;
+  --leading-snug:    1.3;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+
+  /* ---- Letter spacing ---- */
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-caps:   0.08em;  /* uppercase eyebrows / labels */
+}

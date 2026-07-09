@@ -1,0 +1,35 @@
+/* QualityFit — Radius, borders, shadows, motion
+   Values lifted directly from the source app's Tailwind usage. */
+
+:root {
+  /* ---- Radius ---- */
+  --radius-sm:   6px;    /* rounded-md — small controls */
+  --radius-md:   8px;    /* rounded-lg — buttons, inputs, nav items */
+  --radius-lg:   12px;   /* rounded-xl — cards, stat icon tiles */
+  --radius-xl:   16px;   /* rounded-2xl — modals, login card */
+  --radius-full: 9999px; /* pills, avatars */
+
+  /* ---- Borders ---- */
+  --border-w:      1px;
+  --border-accent: 4px;  /* border-l-4 alert stripes */
+
+  /* ---- Shadows (light UI) ---- */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.10), 0 2px 6px -2px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 12px 28px -6px rgb(0 0 0 / 0.16), 0 6px 12px -6px rgb(0 0 0 / 0.10);
+  --shadow-xl: 0 24px 48px -12px rgb(0 0 0 / 0.28);
+  /* Brand-tinted glow used on active nav / primary emphasis */
+  --shadow-brand: 0 8px 20px -6px rgb(217 43 18 / 0.35);
+
+  /* ---- Focus ---- */
+  --ring: 0 0 0 2px var(--white), 0 0 0 4px var(--focus-ring);
+  --ring-inset: 0 0 0 2px var(--focus-ring);
+
+  /* ---- Motion ---- */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-normal: 150ms; /* @kind other */
+  --dur-slow:   200ms; /* @kind other */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+}
