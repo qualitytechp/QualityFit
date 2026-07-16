@@ -1138,6 +1138,19 @@ body {
   position: relative;
 }
 
+.cta-section .cta__phone {
+  font-size: var(--text-lg);
+  color: var(--zinc-400);
+  margin-bottom: var(--space-6);
+  position: relative;
+}
+
+.cta-section .cta__phone a {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .cta-section .cta__actions {
   display: flex;
   gap: var(--space-4);
