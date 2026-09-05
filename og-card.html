@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<title>Tarjeta para compartir — QualityFit</title>
+<!--
+  Plantilla de la imagen que aparece cuando se comparte el link en WhatsApp,
+  Facebook, LinkedIn o Telegram (1200 x 630).
+
+  Para regenerarla:
+    1. Servir la carpeta del portafolio  ->  npx http-server -p 4177
+    2. node ambiente_demo/grabacion/og.js
+  Eso guarda src/images/og-qualityfit.jpg, que es la que apuntan las
+  etiquetas og:image / twitter:image del index.html.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #000;
+    font-family: 'Barlow', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    background:
+      radial-gradient(ellipse 90% 70% at 8% -20%, rgba(217, 43, 18, 0.38) 0%, transparent 60%),
+      linear-gradient(140deg, #18181b 0%, #000 55%);
+    overflow: hidden;
+  }
+
+  /* Franja roja inferior, como firma de marca */
+  .card::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 10px;
+    background: linear-gradient(90deg, #d92b12 0%, #b71f0b 100%);
+  }
+
+  .copy {
+    position: absolute;
+    left: 64px;
+    top: 62px;
+    width: 620px;
+  }
+
+  /* El PNG del logo trae fondo blanco opaco, así que en vez de intentar
+     recolorearlo se monta sobre una pastilla blanca, que además le da aire
+     y lo hace legible en miniatura. */
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    padding: 12px 22px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 34px;
+  }
+
+  .logo {
+    height: 46px;
+    width: auto;
+    display: block;
+  }
+
+  h1 {
+    font-family: 'Barlow Condensed', 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 76px;
+    line-height: 0.94;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  h1 .hl { color: #ff5334; display: block; }
+
+  p.sub {
+    margin-top: 24px;
+    font-size: 25px;
+    line-height: 1.38;
+    font-weight: 500;
+    color: #a1a1aa;
+    max-width: 505px;
+  }
+
+  .chips {
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    max-width: 590px;
+  }
+
+  .chip {
+    padding: 8px 17px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.05);
+    color: #e4e4e7;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  .chip--brand {
+    background: #d92b12;
+    border-color: #d92b12;
+    color: #fff;
+  }
+
+  /* Pantalla del sistema, saliéndose por el borde derecho */
+  .shot {
+    position: absolute;
+    right: -118px;
+    top: 96px;
+    width: 720px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.85),
+                0 0 70px -10px rgba(217, 43, 18, 0.3);
+    transform: rotate(-3.2deg);
+  }
+
+  /* Difuminado que funde la pantalla con el fondo negro */
+  .fade {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 190px;
+    background: linear-gradient(270deg, rgba(0,0,0,0.75) 0%, transparent 100%);
+  }
+
+  .foot {
+    position: absolute;
+    left: 64px;
+    bottom: 46px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #71717a;
+  }
+
+  .foot b { color: #fff; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="shot" src="src/images/app/dashboard.jpg" alt="">
+    <div class="fade"></div>
+
+    <div class="copy">
+      <span class="brand"><img class="logo" src="src/images/logo.png" alt="QualityFit"></span>
+      <h1>
+        El software que
+        <span class="hl">organiza tu gimnasio</span>
+      </h1>
+      <p class="sub">
+        Quién entró hoy, quién te debe y cuánta plata hay. Todo en una sola pantalla.
+      </p>
+      <div class="chips">
+        <span class="chip">Check-in</span>
+        <span class="chip">Membresías</span>
+        <span class="chip">Cobros</span>
+        <span class="chip">Caja</span>
+        <span class="chip">Inventario</span>
+        <span class="chip chip--brand">Videos de cada módulo</span>
+      </div>
+    </div>
+
+    <div class="foot">Demo gratis &middot; <b>WhatsApp 310 679 3519</b></div>
+  </div>
+</body>
+</html>

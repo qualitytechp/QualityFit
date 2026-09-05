@@ -4,35 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>QualityFit — El software que organiza tu gimnasio</title>
-  <meta name="description" content="Controla ingresos, membresías, cobros, caja e inventario de tu gimnasio en un solo lugar. Mira los videos de cada módulo y agenda tu demo gratis.">
-  <meta name="keywords" content="software para gimnasios, programa para gimnasios Colombia, control de acceso gimnasio, membresías, facturación gimnasio, caja gimnasio, QualityFit">
+  <title>Software para gimnasios en Colombia — QualityFit</title>
+  <meta name="description" content="Controla quién entra, quién te debe y cuánta plata hay. QualityFit maneja membresías, cobros, caja e inventario de tu gimnasio. Videos reales y demo gratis.">
+  <meta name="keywords" content="software para gimnasios, programa para gimnasios Colombia, control de acceso gimnasio, sistema de membresías, facturación gimnasio, arqueo de caja gimnasio, software para box de crossfit, software para estudio de yoga, QualityFit">
   <meta name="author" content="QualityFit">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#d92b12">
   <link rel="canonical" href="https://qualitytechp.github.io/QualityFit/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="src/images/logo.png">
   <link rel="apple-touch-icon" href="src/images/logo.png">
 
-  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
+  <!-- Vista previa al compartir el link (WhatsApp, Facebook, LinkedIn, Telegram).
+       Es una tarjeta diseñada de 1200x630 y ~105 KB: WhatsApp solo muestra la
+       vista previa grande si el archivo es liviano y la URL es absoluta.
+       Se genera desde og-card.html — ver ambiente_demo/grabacion/og.js -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="QualityFit">
   <meta property="og:locale" content="es_CO">
   <meta property="og:title" content="QualityFit — El software que organiza tu gimnasio">
-  <meta property="og:description" content="Quién entró, quién debe, cuánta plata hay y qué se vence esta semana. Todo en una sola pantalla. Mira los videos de cada módulo.">
+  <meta property="og:description" content="Quién entró hoy, quién te debe y cuánta plata hay. Todo en una sola pantalla. Mira los videos de cada módulo y pide tu demo gratis.">
   <meta property="og:url" content="https://qualitytechp.github.io/QualityFit/">
-  <meta property="og:image" content="https://qualitytechp.github.io/QualityFit/src/images/app/dashboard.jpg">
-  <meta property="og:image:secure_url" content="https://qualitytechp.github.io/QualityFit/src/images/app/dashboard.jpg">
-  <meta property="og:image:width" content="1280">
-  <meta property="og:image:height" content="720">
-  <meta property="og:image:alt" content="Panel principal de QualityFit con los indicadores del gimnasio">
+  <meta property="og:image" content="https://qualitytechp.github.io/QualityFit/src/images/og-qualityfit.jpg">
+  <meta property="og:image:secure_url" content="https://qualitytechp.github.io/QualityFit/src/images/og-qualityfit.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="QualityFit — el software que organiza tu gimnasio: check-in, membresías, cobros, caja e inventario">
 
-  <!-- Twitter Card -->
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="QualityFit — El software que organiza tu gimnasio">
-  <meta name="twitter:description" content="Quién entró, quién debe, cuánta plata hay y qué se vence esta semana. Todo en una sola pantalla.">
-  <meta name="twitter:image" content="https://qualitytechp.github.io/QualityFit/src/images/app/dashboard.jpg">
+  <meta name="twitter:description" content="Quién entró hoy, quién te debe y cuánta plata hay. Todo en una sola pantalla. Videos reales de cada módulo.">
+  <meta name="twitter:image" content="https://qualitytechp.github.io/QualityFit/src/images/og-qualityfit.jpg">
+  <meta name="twitter:image:alt" content="QualityFit — el software que organiza tu gimnasio: check-in, membresías, cobros, caja e inventario">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,24 +46,138 @@
 
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Structured data for SEO -->
+  <!-- Datos estructurados: le explican a Google qué es esto, quién lo hace y
+       qué contiene la página (producto, empresa, preguntas frecuentes). -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "QualityFit",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web",
-    "url": "https://qualitytechp.github.io/QualityFit/",
-    "description": "Software para gimnasios, boxes y estudios: control de ingreso, membresías, facturación, caja, inventario y reportes en una sola plataforma.",
-    "inLanguage": "es-CO",
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "COP",
-      "price": "0",
-      "description": "Demostración gratuita"
-    },
-    "brand": { "@type": "Brand", "name": "QualityFit" }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://qualitytechp.github.io/QualityFit/#organizacion",
+        "name": "QualityFit",
+        "alternateName": "QualityFit by QualityTech",
+        "url": "https://qualitytechp.github.io/QualityFit/",
+        "logo": "https://qualitytechp.github.io/QualityFit/src/images/logo.png",
+        "image": "https://qualitytechp.github.io/QualityFit/src/images/og-qualityfit.jpg",
+        "description": "Software para gimnasios, boxes y estudios: control de ingreso, membresías, facturación, caja, inventario y reportes.",
+        "areaServed": { "@type": "Country", "name": "Colombia" },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "ventas",
+          "telephone": "+57 310 679 3519",
+          "availableLanguage": ["es-CO"],
+          "areaServed": "CO"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://qualitytechp.github.io/QualityFit/#sitio",
+        "url": "https://qualitytechp.github.io/QualityFit/",
+        "name": "QualityFit",
+        "inLanguage": "es-CO",
+        "publisher": { "@id": "https://qualitytechp.github.io/QualityFit/#organizacion" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://qualitytechp.github.io/QualityFit/#software",
+        "name": "QualityFit",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Software de gestión para gimnasios",
+        "operatingSystem": "Web (navegador en computador, tablet y celular)",
+        "url": "https://qualitytechp.github.io/QualityFit/",
+        "screenshot": "https://qualitytechp.github.io/QualityFit/src/images/app/dashboard.jpg",
+        "description": "Software para gimnasios, boxes y estudios: control de ingreso con búsqueda, huella o carnet; membresías y renovaciones; facturación y cartera; tesorería con arqueo de caja; inventario y punto de venta; compras a proveedores; nómina de instructores y reportes.",
+        "inLanguage": "es-CO",
+        "featureList": [
+          "Check-in y control de ingreso",
+          "Miembros e historial",
+          "Membresías, renovaciones y tiqueteras",
+          "Facturación, abonos y cartera",
+          "Tesorería, movimientos y arqueo de caja",
+          "Clases, horarios recurrentes y reservas",
+          "Inventario y punto de venta",
+          "Compras y cuentas por pagar a proveedores",
+          "Instructores y nómina por día trabajado",
+          "Reportes de ingresos, gastos, asistencia y retención"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "COP",
+          "price": "0",
+          "description": "Demostración gratuita, sin compromiso"
+        },
+        "publisher": { "@id": "https://qualitytechp.github.io/QualityFit/#organizacion" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://qualitytechp.github.io/QualityFit/#preguntas",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Tengo que saber de computadores para usar QualityFit?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Si sabes usar WhatsApp, sabes usar QualityFit. La pantalla de recepción es una sola caja de búsqueda: escribes el nombre y listo. Capacitamos a tu equipo y te acompañamos las primeras semanas." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Sirve para un gimnasio pequeño?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Funciona igual de bien con 40 socios que con 500. Prendes solo los módulos que necesitas y los demás quedan ahí para cuando crezcas." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se adapta a mi forma de cobrar?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Tú defines tus planes: mensualidad, trimestre, semestre, plan anual, tiqueteras por número de clases, planes que solo dan acceso a ciertas actividades o pase por día." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo entrar desde el celular?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Funciona en computador, tablet y celular desde el navegador, sin instalar nada." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Quién puede ver la plata del negocio?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Solo quien tú decidas. Cada persona entra con su propio usuario: la recepción ve lo que necesita para atender, y la parte financiera y de configuración queda para el administrador." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo sacar mi información en Excel?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sí. Los listados y los reportes se descargan en Excel cuando los necesites, para tu contador o para tus propias cuentas." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto se demora en quedar funcionando?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Depende de qué tan ordenada esté hoy tu información, pero lo normal es arrancar en pocos días: cargamos tus socios, montamos tus planes y tus horarios, y capacitamos al equipo." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Y si tengo dudas después?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nos escribes por WhatsApp y te respondemos. No te vendemos un programa y desaparecemos: la idea es que el sistema te sirva de verdad." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Los videos de cada módulo, para que Google los pueda mostrar en resultados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Videos de los módulos de QualityFit",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "item": { "@type": "VideoObject", "name": "QualityFit — Panel principal", "description": "En diez segundos ves los socios, la plata del mes, cuánta gente entró hoy y las alertas de lo que se vence.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/dashboard.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/dashboard.mp4", "uploadDate": "2026-09-04", "duration": "PT1M5S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 2, "item": { "@type": "VideoObject", "name": "QualityFit — Check-in y recepción", "description": "Escribes el nombre, el sistema revisa el plan y la persona entra en dos segundos. Avisa si la membresía está vencida.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/checkin.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/checkin.mp4", "uploadDate": "2026-09-04", "duration": "PT1M5S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 3, "item": { "@type": "VideoObject", "name": "QualityFit — Miembros", "description": "La ficha completa de cada socio: planes, pagos, deudas y última vez que entrenó.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/miembros.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/miembros.mp4", "uploadDate": "2026-09-04", "duration": "PT58S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 4, "item": { "@type": "VideoObject", "name": "QualityFit — Membresías", "description": "Activas, por vencer y vencidas separadas. Renovación en un clic con la factura generada automáticamente.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/membresias.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/membresias.mp4", "uploadDate": "2026-09-04", "duration": "PT51S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 5, "item": { "@type": "VideoObject", "name": "QualityFit — Facturación y cartera", "description": "Lo cobrado y lo que te deben, ordenado por antigüedad, con abonos parciales.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/facturacion.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/facturacion.mp4", "uploadDate": "2026-09-04", "duration": "PT1M1S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 6, "item": { "@type": "VideoObject", "name": "QualityFit — Tesorería y caja", "description": "Efectivo, banco y pagos digitales por separado, con arqueo diario y proyección de caja.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/tesoreria.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/tesoreria.mp4", "uploadDate": "2026-09-04", "duration": "PT1M13S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 7, "item": { "@type": "VideoObject", "name": "QualityFit — Clases y horarios", "description": "El horario recurrente se configura una vez y las clases de cada semana se generan solas, con cupos y reservas.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/clases.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/clases.mp4", "uploadDate": "2026-09-04", "duration": "PT57S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 8, "item": { "@type": "VideoObject", "name": "QualityFit — Inventario y punto de venta", "description": "Stock, alertas de reposición, margen por producto y venta rápida en el mostrador.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/inventario.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/inventario.mp4", "uploadDate": "2026-09-04", "duration": "PT1M12S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 9, "item": { "@type": "VideoObject", "name": "QualityFit — Compras y proveedores", "description": "Al registrar la compra el inventario sube solo, y queda claro cuánto le debes a cada proveedor.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/compras.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/compras.mp4", "uploadDate": "2026-09-04", "duration": "PT1M3S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 10, "item": { "@type": "VideoObject", "name": "QualityFit — Instructores y nómina", "description": "El instructor marca su entrada y con esa marca queda causada la nómina del día.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/instructores.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/instructores.mp4", "uploadDate": "2026-09-04", "duration": "PT50S", "inLanguage": "es-CO" } },
+      { "@type": "ListItem", "position": 11, "item": { "@type": "VideoObject", "name": "QualityFit — Reportes", "description": "Ingresos, gastos y utilidad real del mes, horas pico, retención y socios en riesgo de irse.", "thumbnailUrl": "https://qualitytechp.github.io/QualityFit/src/images/app/reportes.jpg", "contentUrl": "https://qualitytechp.github.io/QualityFit/src/videos/reportes.mp4", "uploadDate": "2026-09-04", "duration": "PT1M22S", "inLanguage": "es-CO" } }
+    ]
   }
   </script>
 </head>

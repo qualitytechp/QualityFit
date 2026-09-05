@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://qualitytechp.github.io/QualityFit/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://qualitytechp.github.io/QualityFit/src/images/og-qualityfit.jpg</image:loc>
+      <image:title>QualityFit — el software que organiza tu gimnasio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qualitytechp.github.io/QualityFit/src/images/app/dashboard.jpg</image:loc>
+      <image:title>Panel principal de QualityFit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qualitytechp.github.io/QualityFit/src/images/app/checkin.jpg</image:loc>
+      <image:title>Pantalla de recepción y check-in de QualityFit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qualitytechp.github.io/QualityFit/src/images/app/tesoreria.jpg</image:loc>
+      <image:title>Tesorería y caja en QualityFit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qualitytechp.github.io/QualityFit/src/images/app/facturacion.jpg</image:loc>
+      <image:title>Facturación y cartera en QualityFit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qualitytechp.github.io/QualityFit/src/images/app/reportes.jpg</image:loc>
+      <image:title>Reportes de ingresos, gastos y asistencia en QualityFit</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qualitytechp.github.io/QualityFit/src/images/app/inventario.jpg</image:loc>
+      <image:title>Inventario y punto de venta en QualityFit</image:title>
+    </image:image>
+  </url>
+</urlset>

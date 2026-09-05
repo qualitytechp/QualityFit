@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# La tarjeta que se usa para compartir el link no es una página: no debe
+# aparecer suelta en los resultados de búsqueda.
+Disallow: /og-card.html
+
+Sitemap: https://qualitytechp.github.io/QualityFit/sitemap.xml
