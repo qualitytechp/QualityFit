@@ -954,8 +954,29 @@
   font-size: var(--text-lg);
   color: var(--zinc-400);
   max-width: 560px;
-  margin: 0 auto var(--space-8);
+  margin: 0 auto var(--space-6);
   position: relative;
+}
+
+/* Esta línea no tenía estilos: heredaba el color oscuro del cuerpo y quedaba
+   negro sobre negro, además de meterse debajo del botón. */
+.cta-section .cta__phone {
+  position: relative;
+  margin: 0 auto var(--space-8);
+  font-size: var(--text-xl);
+  font-weight: var(--fw-semibold);
+  color: var(--white);
+}
+
+.cta-section .cta__phone a {
+  color: var(--red-400);
+  font-weight: var(--fw-bold);
+  white-space: nowrap;
+  transition: color var(--dur-normal) var(--ease-standard);
+}
+
+.cta-section .cta__phone a:hover {
+  color: var(--white);
 }
 
 .cta-section .cta__actions {
@@ -1043,6 +1064,60 @@
   border-top: var(--border-w) solid var(--border-dark);
   font-size: var(--text-sm);
   color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Redes sociales — botones redondos del pie
+   ========================================================================== */
+
+.social {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: var(--border-w) solid var(--border-dark);
+  background: var(--zinc-900);
+  color: var(--zinc-400);
+  transition: color var(--dur-normal) var(--ease-standard),
+              background var(--dur-normal) var(--ease-standard),
+              border-color var(--dur-normal) var(--ease-standard),
+              transform var(--dur-normal) var(--ease-out);
+}
+
+.social__link:hover {
+  color: var(--white);
+  background: var(--brand);
+  border-color: var(--brand);
+  transform: translateY(-2px);
+}
+
+/* Enlace a redes bajo el botón de WhatsApp del cierre */
+.cta-section .cta__social {
+  position: relative;
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cta-section .cta__social a {
+  color: var(--white);
+  font-weight: var(--fw-semibold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: opacity var(--dur-normal) var(--ease-standard);
+}
+
+.cta-section .cta__social a:hover {
+  opacity: 0.75;
 }
 
 /* ==========================================================================
